@@ -1,0 +1,125 @@
+:root {
+  /* IEEE colors */
+  --ieee-blue: #006699;
+  --ieee-gold: #C3922E;
+  --white: #FFFFFF;
+  --black: #000000;
+  --light-gray: #F5F5F5;
+  --dark-gray: #333333;
+  
+  /* Typography */
+  --font-heading: 'Segoe UI', Arial, sans-serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Container widths */
+  --container-width: 1200px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--white);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-sm);
+  color: var(--ieee-blue);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--ieee-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--ieee-gold);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+  position: relative; /* Ensure sections can use z-index */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--ieee-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--ieee-gold);
+}
+
+/* Prevent white flash during page transitions */
+.app {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Fix for potential z-index stacking issues */
+.hero-section, .about-section, .events-section, .testimonials-section, .footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+} 

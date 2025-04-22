@@ -1,0 +1,10 @@
+{  
+"  \"compilerOptions\": { >> temp.txt && echo "    \"target\": \"ESNext\",  
+"    \"useDefineForClassFields\": true, >> temp.txt && echo "    \"lib\": [\"DOM\", \"DOM.Iterable\", \"ESNext\"],  
+"    \"allowJs\": true, >> temp.txt && echo "    \"skipLibCheck\": true,  
+"    \"esModuleInterop\": true, >> temp.txt && echo "    \"allowSyntheticDefaultImports\": true,  
+"    \"strict\": true, >> temp.txt && echo "    \"forceConsistentCasingInFileNames\": true,  
+"    \"module\": \"ESNext\", >> temp.txt && echo "    \"moduleResolution\": \"Node\",  
+"    \"resolveJsonModule\": true, >> temp.txt && echo "    \"isolatedModules\": true,  
+"    \"noEmit\": true, >> temp.txt && echo "    \"jsx\": \"react-jsx\"  
+"  }, >> temp.txt && echo "  \"include\": [\"src\"],  

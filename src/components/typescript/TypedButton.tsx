@@ -1,0 +1,1 @@
+import React from "react"; interface ButtonProps { text: string; onClick?: () => void; variant?: "primary" | "secondary"; } const TypedButton: React.FC<ButtonProps> = ({ text, onClick, variant = "primary" }) => { return ( <button className={`btn ${variant === "primary" ? "btn-primary" : "btn-secondary"}`} onClick={onClick}> {text} </button> ); }; export default TypedButton;

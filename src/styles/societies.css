@@ -1,0 +1,92 @@
+.societies-section {
+  background-color: var(--light-bg);
+  /* 
+  : var(--spacing-xl) 0; */
+  overflow: hidden;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: var(--spacing-md);
+  position: relative;
+}
+
+/* Updated marquee CSS for smooth continuous loop */
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.society-item {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 var(--spacing-md);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.society-item:hover {
+  transform: translateY(-10px);
+}
+
+.society-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  padding: 15px;
+  margin-bottom: var(--spacing-sm);
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.society-item h3 {
+  font-size: 1rem;
+  color: var(--ieee-blue);
+  margin-top: var(--spacing-xs);
+  font-weight: 600;
+}
+
+/* On hover pause animation */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .society-item {
+    width: 150px;
+  }
+  
+  .marquee-content {
+    animation-duration: 25s;
+  }
+}
+
+@media (max-width: 480px) {
+  .society-item {
+    width: 120px;
+    margin: 0 var(--spacing-sm);
+  }
+  
+  .marquee-content {
+    animation-duration: 20s;
+  }
+} 
