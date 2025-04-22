@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-description" data-aos="fade-up" data-aos-delay="100">
           <p>
             The IEEE Student Branch at College of Engineering Chengannur (CEC) is a vibrant community 
-            of passionate technology enthusiasts. Established in [Year], our branch has been at the 
+            of passionate technology enthusiasts.Our branch has been at the 
             forefront of fostering innovation, technical knowledge, and professional development among 
             engineering students. We organize workshops, technical talks, competitions, and social activities 
             that help students develop both technical and soft skills needed for their future careers.
