@@ -42,7 +42,7 @@ const Navbar = () => {
           <li><a href="#about" onClick={() => setIsMenuOpen(false)}>About</a></li>
           <li><a href="#events" onClick={() => setIsMenuOpen(false)}>Events</a></li>
           <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Testimonials</a></li>
-          <li><a href="#" className="btn nav-cta" onClick={() => setIsMenuOpen(false)}>Join Us</a></li>
+          <li><a href="https://www.ieee.org/membership/join/index.html" className="btn nav-cta" onClick={() => setIsMenuOpen(false)}>Join Us</a></li>
         </ul>
       </div>
     </nav>

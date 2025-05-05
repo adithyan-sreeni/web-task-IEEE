@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 data-aos="fade-down" data-aos-delay="100">IEEE Student Branch</h1>
         <h2 data-aos="fade-down" data-aos-delay="300">College of Engineering Chengannur</h2>
         <p className="hero-tagline" data-aos="fade-up" data-aos-delay="500">Empowering Students Through Technology and Innovation</p>
-        <button className="btn cta-btn" data-aos="fade-up" data-aos-delay="700">Join Us</button>
+        <a href="https://www.ieee.org/membership/join/index.html" className="btn cta-btn" data-aos="fade-up" data-aos-delay="700">Join Us</a>
       </div>
     </section>
   );
